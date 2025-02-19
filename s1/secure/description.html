@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Description</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Gradient background */
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 70%;
+      margin: 0 auto;
+      padding: 30px;
+      background: #000000; /* Black background */
+      color: #ffffff; /* White text */
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+      border: 1px solid #444; /* Subtle border */
+    }
+
+    .project-title, .title {
+      color: #e74c3c; /* Red text for headings */
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2.8em;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 2.2em;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #ffffff; /* White text */
+      background-color: #222; /* Dark background for description */
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .instructions, .app-password {
+      color: #ffffff; /* White text */
+      background-color: #333; /* Dark background for instructions */
+      padding: 15px;
+      border-radius: 8px;
+      line-height: 1.8;
+    }
+
+    .instructions span, .app-password span {
+      color: #e74c3c; /* Red color for span text */
+      font-weight: bold; /* Make the text bold */
+    }
+
+    .instructions ul, .app-password ul {
+      list-style: none; /* Remove default bullets */
+      padding-left: 0; /* Remove default padding */
+    }
+
+    .instructions ul li, .app-password ul li {
+      position: relative; /* Position for custom bullet */
+      padding-left: 30px; /* Space for custom bullet */
+      margin-bottom: 15px; /* Space between items */
+      font-size: 1.1em; /* Slightly larger text */
+    }
+
+    .instructions ul li::before, .app-password ul li::before {
+      content: "▶"; /* Custom bullet */
+      position: absolute;
+      left: 0;
+      color: #e74c3c; /* Red color for custom bullet */
+      font-size: 1.5em; /* Size of custom bullet */
+      line-height: 1.2; /* Adjust line height for bullet */
+    }
+
+    .instructions ul ul, .app-password ul ul {
+      list-style-type: none; /* Remove default bullets from nested lists */
+      padding-left: 20px; /* Indent nested lists */
+    }
+
+    .instructions ul ul li, .app-password ul ul li {
+      position: relative; /* Position for nested custom bullet */
+      padding-left: 30px; /* Space for nested custom bullet */
+      color: #cccccc; /* Lighter grey for nested items */
+    }
+
+    .instructions ul ul li::before, .app-password ul ul li::before {
+      content: "●"; /* Custom bullet for nested lists */
+      color: #e74c3c; /* Red color for custom bullet */
+      font-size: 1.2em; /* Size of custom bullet */
+      line-height: 1.2; /* Adjust line height for bullet */
+    }
+
+    .instructions ul li:hover, .app-password ul li:hover {
+      background-color: #444; /* Dark background on hover */
+      border-radius: 8px;
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .instructions ul ul li:hover, .app-password ul ul li:hover {
+      background-color: #555; /* Slightly lighter dark background on hover for nested items */
+      border-radius: 8px;
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .note {
+      padding: 15px;
+      background-color: #f8d7da; /* Light red background */
+      color: #721c24; /* Darker red text */
+      border: 1px solid #f5c6cb; /* Light red border */
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for note */
+    }
+
+    .note h4 {
+      margin: 0;
+      font-weight: 700;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="project-title">Cyber Shield</h1>
+    <h2 class="title">Welcome!</h2>
+    <p class="description">
+      Cyber Shield is a model used to detect phishing emails and report to the user about any suspicious emails. Our Cyber Shield runs continuously whenever the PC is powered on. Without any manual intervention, it gets auto-started.
+    </p>
+    <p class="instructions">
+      <span>Points to follow:</span>
+      <ul>
+        <li>You have to upload the extension by going to Google Extensions. Then, load the extension.</li>
+        <li>Once the extension is loaded, click on the extension icon. You will have 3 options:
+          <ul>
+            <li><strong>Review:</strong> Used to check the phishing mails detected.</li>
+            <li><strong>Details:</strong> Provides information about the extension's permissions.</li>
+            <li><strong>Description:</strong> Provides information on using Cyber Shield.</li>
+          </ul>
+        </li>
+        <li>When email phishing detection starts, it will ask for an email and password. Enter these and click submit. Phishing mails are detected every 10 seconds, and a report is generated for detected phishing mails. Users can download and view these reports.</li>
+      </ul>
+    </p>
+    <p class="app-password">
+      <span>How to create an app password for Gmail:</span>
+      <ul>
+        <li>Go to your <strong>Google Account</strong> and select <strong>Security</strong>.</li>
+        <li>Under <strong>Signing in to Google</strong>, select <strong>App passwords</strong>. You may need to sign in again.</li>
+        <li>At the bottom, choose <strong>Select app</strong> and choose the app you’re using.</li>
+        <li>Choose <strong>Select device</strong> and choose the device you’re using.</li>
+        <li>Select <strong>Generate</strong>.</li>
+        <li>Follow the instructions to enter the app password. The 16-character code will appear. Copy and use this password in your application.</li>
+      </ul>
+    </p>
+    <div class="note">
+      <h4>Note:</h4>
+      <p>Internet Connection is compulsory for the Cyber Shield extension to function properly.</p>
+    </div>
+  </div>
+</body>
+</html>
